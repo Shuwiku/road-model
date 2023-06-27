@@ -15,19 +15,31 @@ def load_image(path, colorkey=None, size=None):
     return image
 
 
-def load_cars_image(path, car_size, colorkey=None, count=4):
+def load_cars_image(path, car_size, colorkey=None, count_x=3, count_y=4):
     full_image = load_image(path, colorkey)
     x0, y0 = full_image.get_size()
     x, y = 0, 0
-    x_step, y_step = x0 // count, y0
+    x_step, y_step = x0 // count_x, y0 // count_y
     ret = []
-    for _ in range(count):
-        image = pygame.Surface((x_step, y_step))
-        crop = (x, y, x + x_step, y + y_step)
-        image.blit(full_image, (0, 0), crop)
-        image = pygame.transform.scale(image, car_size).convert()
-        colorkey = image.get_at((0, 0))
-        image.set_colorkey(colorkey)
-        ret.append(image)
-        x += x_step
+    for _ in range(count_y):
+        for __ in range(count_x):
+            image = pygame.Surface((x_step, y_step))
+            crop = (x, y, x + x_step, y + y_step)
+            image.blit(full_image, (0, 0), crop)
+            image = pygame.transform.scale(image, car_size).convert()
+            colorkey = image.get_at((0, 0))
+            image.set_colorkey(colorkey)
+            ret.append(image)
+            x += x_step
+        x = 0
+        y += y_step
+    # for _ in range(count):
+    #     image = pygame.Surface((x_step, y_step))
+    #     crop = (x, y, x + x_step, y + y_step)
+    #     image.blit(full_image, (0, 0), crop)
+    #     image = pygame.transform.scale(image, car_size).convert()
+    #     colorkey = image.get_at((0, 0))
+    #     image.set_colorkey(colorkey)
+    #     ret.append(image)
+    #     x += x_step
     return ret

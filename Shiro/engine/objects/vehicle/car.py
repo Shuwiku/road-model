@@ -12,9 +12,9 @@ class Car(pygame.sprite.Sprite):
         self.rect = car_image.get_rect()
         self.rect.center = car_road.road_points[0]
         self.image = car_image
-        # self.mask = pygame.mask.from_surface(car_image)
 
         self._sprite_group = sprite_group
+        self._speed0 = car_speed
         self._speed = car_speed
         self._road = car_road
         self._image0 = car_image
@@ -36,12 +36,18 @@ class Car(pygame.sprite.Sprite):
             self.kill()
 
     def _is_collide(self, screen):
-        a = CarVector(650 // 2, 650 // 2, self.rect.center, self._vector)
+        a = CarVector(*screen.get_size(), self.rect.center, self._vector)
         for i in self._sprite_group:
             if pygame.sprite.collide_mask(i, a) and i.rect.center != self.rect.center:
                 self._sleep_time += 1
+                if self._speed - 0.3 >= 0:
+                    self._speed -= 0.3
                 return True
         self._sleep_time = 0
+        if self._speed + 0.01 <= self._speed0:
+            self._speed += 0.05
+        else:
+            self._speed = self._speed0
         return False
 
     def _move(self, screen):
@@ -61,10 +67,10 @@ class Car(pygame.sprite.Sprite):
         self.rect.center = x, y
 
     def _triggers(self, roads_list, screen):
-        range_x = range(self._next_x - self._speed, 
-                        self._next_x + self._speed)
-        range_y = range(self._next_y - self._speed,
-                        self._next_y + self._speed)
+        range_x = range(round(self._next_x - self._speed), 
+                        round(self._next_x + self._speed))
+        range_y = range(round(self._next_y - self._speed),
+                        round(self._next_y + self._speed))
         x, y = self.rect.center
 
         if (x, y) == (self._next_x, self._next_y) or \
@@ -99,18 +105,14 @@ class Car(pygame.sprite.Sprite):
         vec = self._direction.normalize() * self._vector_lenght
         self._vector = pygame.math.Vector2(dir_vec_2.x + vec.x, dir_vec_2.y + vec.y)
 
-        # vec = self._direction.normalize() * 50
-        # vec = pygame.math.Vector2(dir_vec_2.x + vec.x, dir_vec_2.y + vec.y)
-        # pygame.draw.line(screen, (0, 0, 255), dir_vec_2, vec, width=2)
-
 
 class CarVector(pygame.sprite.Sprite):
 
     def __init__(self, x, y, s, e):
         super().__init__()
-        self.image = pygame.Surface((650, 650))
+        self.image = pygame.Surface((x, y))
         self.image.set_colorkey((0, 0, 0))
         self.rect = self.image.get_rect()
-        self.rect.center = 650 // 2, 650 // 2
+        self.rect.center = x // 2, y // 2
         pygame.draw.line(self.image, (100, 100, 200), s, e, 2)
         self.mask = pygame.mask.from_surface(self.image)

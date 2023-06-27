@@ -20,4 +20,4 @@ SONG_FILES = [os.path.join(_engine_sounds_folder, i) for i in os.listdir(_engine
 
 SPAWNERS_DELAY_RANGE = 6, 15
 CAR_SPPED_RANGE = 1, 2
-CAR_SIZE = 18, 32
+CAR_SIZE = 19, 33
