@@ -4,6 +4,12 @@
 
 <hr align="center" width="650" size="3"/>
 
+<div id="header" align="center">
+  <img src="https://pa1.aminoapps.com/7227/7c4263a0187cbbb2c105b64973655dc6e668a39br1-500-281_hq.gif" width="400"/>
+</div>
+
+<hr align="center" width="650" size="3"/>
+
 <h2>Начало работы</h2>
 
 <h3>Шаг 1.</h3> Скопируйте репозиторий к себе на компьютер.<br><br>
