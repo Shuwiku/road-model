@@ -61,3 +61,19 @@ python3 main.py</code><br>
 <div id="header" align="center">
   <hr align="center" width="650" size="3"/>
 </div>
+
+<h2>Заключение</h2>
+
+В общем (и целом), я действительно постарался успеть сделать что-то хорошее за остаток недели, так что надеюсь на высокий балл.
+
+<div id="header" align="center">
+  <hr align="center" width="650" size="3"/>
+</div>
+
+<div id="header" align="center">
+  <img src="https://media.tenor.com/LsTm2sO-8FkAAAAd/shiro-no-game-no-life.gif" width="400"/>
+</div>
+
+<div id="header" align="center">
+  <hr align="center" width="650" size="3"/>
+</div>
