@@ -53,10 +53,10 @@ python3 main.py</code><br>
 <code>road-model/Shiro/engine/sounds/</code><br><br>
 Изначально там уже лежит несколько из нравящихся мне песен.<br><br>
 Для управления плеером используются следующие комбинации клавиш:<br>
-<b>LEFT CTRL + LEFT ARROW</b> - переключить на 1 песню назад<br>
-<b>LEFT CTRL + LEFT RIGHT</b> - переключить на 1 песню вперёд<br>
-<b>LEFT CTRL + LEFT DOWN</b> - поставить плеер на паузу<br>
-<b>LEFT CTRL + LEFT UP</b> - снять плеер с паузы<br>
+<b>LEFT CTRL + ARROW LEFT</b> - переключить на 1 песню назад<br>
+<b>LEFT CTRL + ARROW RIGHT</b> - переключить на 1 песню вперёд<br>
+<b>LEFT CTRL + ARROW DOWN</b> - поставить плеер на паузу<br>
+<b>LEFT CTRL + ARROW UP</b> - снять плеер с паузы<br>
 
 <div id="header" align="center">
   <hr align="center" width="650" size="3"/>
