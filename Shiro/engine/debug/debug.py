@@ -92,8 +92,10 @@ class Debug:
         self._sounds_list = _sounds_list
 
     def update(self):
+
         if not self._debug:
             return
+
         x, y = 0, 0
         self._display_debug_mode(x, y)
         y += self._font_distance
@@ -149,32 +151,43 @@ class Debug:
     def _draw_road_lines(self, x, y):
         text = 'draw road lines'
         self.__blit_text(text, x, y)
+
         for i in self._roads_list:  # road points
             points = i.road_points
+
             for j in range(len(points) - 1):
                 pygame.draw.line(self._screen, (0, 0, 255), points[j], points[j + 1], 3)
+
             next_roads = i.next_roads  # next roads
+
             if next_roads is None:
                 continue
+
             for j in next_roads:
                 point = None
+
                 for k in self._roads_list:
+
                     if k.road_id == j:
                         point = k.road_points[0]
                         break
+
                 pygame.draw.line(self._screen, (0, 255, 0), points[-1], point, 3)
+
             road_id = i.road_id  # road id
             self.__blit_text(road_id, *points[0])
 
     def _draw_car_hitboxes(self, x, y):
         text = 'draw car hitboxes'
         self.__blit_text(text, x, y)
+
         for i in self._car_sprites:
             pygame.draw.rect(self._screen, (255, 0, 0), i.rect, 2)
 
     def _draw_car_vectors(self, x, y):
         text = 'draw car vectors'
         self.__blit_text(text, x, y)
+
         for i in self._car_sprites:
             pygame.draw.line(self._screen, (255, 0, 125), i.rect.center, i._vector, 2)
 

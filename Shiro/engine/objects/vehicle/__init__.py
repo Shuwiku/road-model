@@ -1,1 +1,1 @@
-from .car import *
+from .car import Car

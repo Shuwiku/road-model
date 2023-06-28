@@ -1,1 +1,1 @@
-from .load_image import *
+from . import load_image

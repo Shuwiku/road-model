@@ -1,3 +1,3 @@
-from .road import *
-from .spawner import *
-from .vehicle import *
+from . import road
+from . import spawner
+from . import vehicle

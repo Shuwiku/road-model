@@ -1,1 +1,1 @@
-from .road import *
+from .road import Road

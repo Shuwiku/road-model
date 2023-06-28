@@ -1,11 +1,17 @@
 import json
 import random
 
+import pygame.sprite
+
 import config
 from Shiro import engine
 
 
-def load_roads_from_file(path, encoding=None):
+def load_roads_from_file(path: str,
+                         encoding: str = None):
+    """Загрузить дороги из файла.
+    Я не хотел пихать эту громоздкую хрень в основное тело программы,
+    поэтому вынес сюда."""
     roads = []
     with open(path, mode='r', encoding=encoding) as f:
         data = json.load(f)
@@ -20,7 +26,13 @@ def load_roads_from_file(path, encoding=None):
     return roads
 
 
-def load_spawners_from_file(path, roads, cars_sprite_group, encoding=None):
+def load_spawners_from_file(cars_sprite_group: pygame.sprite.Group,
+                            path: str,
+                            roads: list[engine.objects.road.Road],
+                            encoding: str = None):
+    """Загрузить спавнеры из файла.
+    Я не хотел пихать эту громоздкую хрень в основное тело программы,
+    поэтому вынес сюда."""
     spawners = []
     with open(path, mode='r', encoding=encoding) as f:
         data = json.load(f)
