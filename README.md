@@ -10,7 +10,9 @@
   <img src="https://pa1.aminoapps.com/7227/7c4263a0187cbbb2c105b64973655dc6e668a39br1-500-281_hq.gif" width="400"/>
 </div>
 
-<hr align="center" width="650" size="3"/>
+<div id="header" align="center">
+  <hr align="center" width="650" size="3"/>
+</div>
 
 <h2>Начало работы</h2>
 
@@ -33,7 +35,9 @@ python main.py</code><br><br>
 python3 -m pip install -r requirements.txt<br>
 python3 main.py</code><br>
 
-<hr align="center" width="650" size="3"/>
+<div id="header" align="center">
+  <hr align="center" width="650" size="3"/>
+</div>
 
 <h2>Возможности</h2><br>
 На самом деле, управлять там особо нечем. Это же модель, она работает сама по себе! Но кое-что мы сделать можем. <br>
@@ -53,3 +57,7 @@ python3 main.py</code><br>
 <b>LEFT CTRL + LEFT RIGHT</b> - переключить на 1 песню вперёд<br>
 <b>LEFT CTRL + LEFT DOWN</b> - поставить плеер на паузу<br>
 <b>LEFT CTRL + LEFT UP</b> - снять плеер с паузы<br>
+
+<div id="header" align="center">
+  <hr align="center" width="650" size="3"/>
+</div>
