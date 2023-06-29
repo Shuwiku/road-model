@@ -1,4 +1,4 @@
-import pygame
+  import pygame
 
 import config
 import utils
@@ -19,6 +19,7 @@ pygame.mixer.music.set_endevent(song_finished)
 song_index = 0
 pygame.mixer.music.load(config.SONG_FILES[song_index])
 pygame.mixer.music.play(0)
+pygame.mixer.music.pause()
 
 
 def change_music(option=1):
