@@ -1,10 +1,28 @@
-<div style="text-align: center; padding: 10px;">
-    <h1>Модель движения на круговой автомоблильной развязке</h1>
-</div>
-<div style="text-align: center; padding: 5px 50px 5px 50px;">
-    <hr>
-    <div style="margin: 15px;">
-        <img src="https://media.tenor.com/tpVhr2SfAnQAAAAC/no-game-no-life-shiro.gif">
-    </div>
-    <hr>
-</div>
+<p align="center">
+    <img src="https://ibb.co/JCnHR5F" width="300">
+</p>
+
+<p align="center">
+    <img alt="Python Version" src="https://img.shields.io/badge/Python%20-%203.10%20-%20yellow">
+    <img alt="Static Badge" src="https://img.shields.io/badge/Pygame%20-%202.5.0%20-%20green">
+    <img alt="Shiro" src="https://img.shields.io/badge/Shiro%20-%20purple">
+</p>
+
+## About
+
+About Text Here
+
+## Documentation
+
+Documentation Here
+
+## Distribute
+
+- [Service Name](Page Link)
+
+
+## Developers
+
+- [Delevoper Name](GitHub Profile Link)
+
+## License
