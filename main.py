@@ -1,7 +1,3 @@
-import os
-import json
-import random
-
 import pygame
 
 import config
