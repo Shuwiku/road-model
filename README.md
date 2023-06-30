@@ -1,11 +1,11 @@
 <p align="center">
-    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/rGJz9TZ/shiro.gif">
+    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/rGJz9TZ/shiro.gif"/>
 </p>
 
 <p align="center">
-    <img alt="Python Version" src="https://img.shields.io/badge/Python%20-%203.10%20-%20yellow">
-    <img alt="Pygame" src="https://img.shields.io/badge/Pygame%20-%202.5.0%20-%20green">
-    <img alt="Version" src="https://img.shields.io/badge/Version%20-%201.0%20-%20purple">
+    <img alt="Python Version" src="https://img.shields.io/badge/Python%20-%203.10%20-%20yellow"/>
+    <img alt="Pygame" src="https://img.shields.io/badge/Pygame%20-%202.5.0%20-%20green"/>
+    <img alt="Version" src="https://img.shields.io/badge/Version%20-%201.0%20-%20purple"/>
 </p>
 
 ## Содержание
