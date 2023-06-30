@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/rGJz9TZ/shiro.gif"/>
+    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/gyjPNyr/shiro.gif"/>
 </p>
 
 <p align="center">
