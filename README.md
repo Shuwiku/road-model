@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/4fzVK8y/road-model-shiro-title.gif">
+    <img alt="Широ ^-^" width="500" src="https://i.ibb.co/rGJz9TZ/shiro.gif">
 </p>
 
 <p align="center">
@@ -28,7 +28,7 @@
 Работу выполнил студент группы ПИЭ-21 Дряхлов Олег
 
 <p align="center">
-    <img alt="Пример работы программы" width="500" src="https://i.ibb.co/PMk33PW/road-model.png"> <br>
+    <img alt="Пример работы программы" width="500" src="https://i.ibb.co/QMYm5vz/program-example.png"> <br>
     Пример работы программы
 </p>
 
@@ -74,7 +74,7 @@ python3 main.py
 Настроить вывод можно только в коде, в файле [main.py](main.py), переменная *debug* (строка 44 для версии 1.0).
 
 <p align="center">
-    <img alt="Пример работы режима отладки" width="500" src="https://i.ibb.co/Xb1vYPH/road-model-debug-mode-example.png"> <br>
+    <img alt="Пример работы режима отладки" width="500" src="https://i.ibb.co/W0stSCk/debug-mode-example.png"> <br>
     Пример работы режима отладки
 </p>
 
