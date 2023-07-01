@@ -6,6 +6,7 @@
     <img alt="Python Version" src="https://img.shields.io/badge/Python%20-%203.10%20-%20yellow"/>
     <img alt="Pygame" src="https://img.shields.io/badge/Pygame%20-%202.5.0%20-%20green"/>
     <img alt="Version" src="https://img.shields.io/badge/Version%20-%201.0%20-%20purple"/>
+    <img alt="License" src="https://img.shields.io/badge/License%20-%20MIT%20-%20aqua">
 </p>
 
 ## Содержание
